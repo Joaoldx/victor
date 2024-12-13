@@ -26,6 +26,16 @@ body {
   font-weight: 300;
 }
 
+.row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.first-icon {
+    align-self: baseline;
+}
+
 .photo {
   display: block;
   width: 210px;
