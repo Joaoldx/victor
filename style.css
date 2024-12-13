@@ -33,9 +33,17 @@ body {
   margin: 20px 0;
 }
 
+.icon {
+    position: absolute;
+    top: 0;
+    left: -41px;
+    z-index: 5;
+}
+
 .description {
   color: white;
   font-size: 14px;
+  font-weight: 300;
   width: 300px;
 }
 
@@ -101,8 +109,9 @@ body {
   background-color: var(--icon-blue);
   top: 6%;
   bottom: 0;
-  left: 5%;
-  margin-left: -3px;
+  left: 0%;
+  margin-left: 0px;
+  height: 90%;
 }
 
 /* Container around content */
@@ -119,7 +128,7 @@ body {
   position: absolute;
   width: 25px;
   height: 25px;
-  right: 17px;
+  right: 0px;
   background-color: var(--icon-blue);
   border: none;
   top: 7px;
@@ -137,6 +146,8 @@ body {
 .smallBullet {
     position: relative;
     background-color: inherit;
+    padding-left: 30px;
+    margin-bottom: 15px;
   }  
 
 .smallBulletLight::after {
@@ -148,18 +159,18 @@ body {
     position: absolute;
     width: 10px;
     height: 10px;
-    right: 17px;
+    right: 0px;
     background-color: var(--icon-blue);
     border: 4px solid white;
     top: 0px;
     border-radius: 50%;
     z-index: 1;
-    left: -42px;
+    left: -8px;
 }
 
 /* Place the container to the right */
 .position {
-    left: 10%;
+    left: -10px;
     /* border: 1px solid red; */
 }
 
@@ -173,30 +184,32 @@ body {
   z-index: 1;
   left: 30px;
 }
+
 .right::before {
-    left: 30px;
+    left: 0px;
     border: medium solid white;
 }
 
 .left {
-    left: 10%;
+    left: 0%;
     /* border: 1px solid red; */
 }
 
 .left::after {
-    left: -41px;
+    left: 0px;
 }
 
 
 /* Fix the circle for containers on the right side */
 .position::after {
-  left: -36px;
+  left: 0px;
 }
 
 /* The actual content */
 .content {
   /* padding: 20px 30px; */
   /* background-color: white; */
+  margin-left: 30px;
   position: relative;
   border-radius: 6px;
 }
